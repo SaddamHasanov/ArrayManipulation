@@ -42,7 +42,7 @@
 				}
 				isEqual2 = false;
 			}
-			/* eger isEqual1 FALSE - dursa, demeli 
+			/* eger isEqual1 FALSE - dursa, demeli yene de
 			   elementimiz ortaq deyil ve onu yeni arraya atmaq olar */
 			if(isEqual1 == false) {
 				// yeni array yaradib ortaq olmayanlari onun icine atir
