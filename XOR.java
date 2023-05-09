@@ -3,12 +3,15 @@
 		boolean isEqual1 = false;
 		boolean isEqual2 = false;
 		boolean isEqual = false;
+		
 		// dongulerde istifade elediyim deyisenlerdir
 		int i, j, a, b, c, d, e;
 		int counter = 0;
+		
 		/* bu arrayin olcusunu her defe 1 vahid artiririq ve 
 		   ortaq olmayan elementleri her defe buna menimesdirik */
 		int [] newArray = null;
+		
 		/* temp ise komekci arraydi, menimsetmede istifade olunur ki, 
 		   deyerleri itirmeyek, yadda qalsin */
 		int [] temp = new int [1000000];
@@ -21,6 +24,7 @@
 				if(array[i] == array2[j]) {
 					isEqual1 = true;
 				}
+				
 				/* Ikinci arrayla birincini muqayise edir,
 				   eger ortaq elemnet varsa isEqual2 TRUE olur */
 				for(a = 0; a < array.length; a++) {
@@ -29,6 +33,7 @@
 						break;
 					}
 				}
+				
 				/* eger isEqual2 FALSE - dursa, demeli elementimiz
 				   ortaq deyil ve onu yeni arraya atmaq olar */
 				if(isEqual2 == false) {
@@ -42,6 +47,7 @@
 				}
 				isEqual2 = false;
 			}
+			
 			/* eger isEqual1 FALSE - dursa, demeli yene de
 			   elementimiz ortaq deyil ve onu yeni arraya atmaq olar */
 			if(isEqual1 == false) {
@@ -65,7 +71,8 @@
 					break;
 				}
 			}
-			
+			/* Eger isEqual FALSE - dursa demeli yeni arrayimizde hemin element
+			   hec tekrarlanmiyib ve demeli onu cap etmek olar */
 			if(isEqual == false) {
 				System.out.print(newArray[d] + " ");
 			}
