@@ -1,5 +1,5 @@
 // ortaq elementleri cixartmaq
-	public void IntersectArrays(int [] array2) {
+	public void IntersectArrays(int [] array, int [] array2) {
 		int counter = 1;
 		int a, b, i, j;
 		
