@@ -1,5 +1,5 @@
 	// ortaq olmayan elementleri cixartmaq (XOR emeliyyati)
-	public void NotIntersect(int [] array2) {
+	public void NotIntersect(int [] array, int [] array2) {
 		boolean isEqual1 = false;
 		boolean isEqual2 = false;
 		boolean isEqual = false;
